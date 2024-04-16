@@ -1,0 +1,57 @@
+body {
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(181, 145, 218);
+}
+
+
+body > form > div > h1 {
+    font-size:30px;
+    font-family: 'Times New Roman', Times, serif;   
+    margin-bottom: 50px;
+}
+
+body > form {
+    margin:auto 0;
+    width: 40%;
+    height: 80%;
+    border: 1px solid rgb(238, 207, 207);
+    border-radius: 15px;
+    background-color: rgb(170, 195, 201);
+  
+
+}
+
+.inputCliente {
+    border:solid  1px rgb(185, 149, 149);
+    border-radius: 5px;
+    margin-bottom: 25px;
+    margin-top: 5px;
+    width: 50%;
+    
+}
+
+.labelCliente {
+    color: rgb(245, 235, 235);
+}
+
+
+body > form > div {
+width: 80%;
+height: 100%;
+margin: 0 auto;
+text-align: center;
+}
+
+
+body > form > div > button {
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(205, 238, 238);
+
+}
+
+

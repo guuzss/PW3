@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<body>
+	<head>
+		<meta charset="UTF-8">
+		<title>Clientes</title>
+		<link rel="stylesheet" href="css/cadastro-cliente.css">
+	</head>
+	
+		
+	
+	<form action="#" th:action="@{/save1}" th:object="${cliente}" method="post">
+			<div>
+				<h1>Cadastro de Clientes</h1>
+				
+				<label for="cnpj" class="labelCliente">CNPJ:</label><br>
+				<input class="inputCliente" type="text" id="cnpj" th:field="*{cnpj}"><br>	
+				<label for="razao" class="labelCliente">Razão Social:</label><br>
+				<input class="inputCliente" type="text" id="razao" th:field="*{razao}"><br>
+				<label for="senha" class="labelCliente">Senha:</label><br>
+				<input class="inputCliente" type="password" id="senha" th:field="*{senha}"><br>
+				<label for="email" class="labelCliente">Email:</label><br>
+				<input class="inputCliente" type="text" id="email" th:field="*{email}"><br>
+						
+				<button type="submit">Cadastrar</button>
+				
+				</div>
+			</form>
+	
+</body>
+</html>

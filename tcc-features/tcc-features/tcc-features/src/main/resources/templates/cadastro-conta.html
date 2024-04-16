@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<body>
+	<head>
+		<meta charset="UTF-8">
+		<title>Clientes</title>
+		<link rel="stylesheet" href="css/cadastro-conta.css">
+	</head>
+	
+		
+	
+	<form action="#" th:action="@{/save}" th:object="${conta}" method="post">
+			<div>
+				<h1>Cadastro de Contas</h1>
+				
+				<label for="conta" class="labelCliente">Conta:</label><br>
+				<input class="inputCliente" type="text" id="conta" th:field="*{conta}"><br>	
+				<label for="descricao" class="labelCliente">Descrição:</label><br>
+				<input class="inputCliente" type="text" id="descricao" th:field="*{descricao}"><br>
+				<label for="genero" class="labelCliente">Genero da Conta:</label><br>
+				<input class="inputCliente" type="text" id="genero" th:field="*{genero}"><br>
+				
+				<button type="submit">Cadastrar</button>
+				
+				</div>
+			</form>
+	
+</body>
+</html>
